@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>heart</title>
+</head>
+<body>
+<canvas  class="canvas" width="400px" height="400px" ></canvas>
+<script>
+    var canvas=document.querySelector('canvas');
+    var context=canvas.getContext('2d');
+    context.lineWidth=3;
+    context.translate(200,200);
+    var t=0;
+    var vt=0.01;
+    var maxt=2*Math.PI;
+    var maxi=Math.ceil(maxt/vt);
+    var pointArr=[];
+    var size=10;
+    var x=0;
+    var y=0;
+    for(var i=0;i<=maxi;i++){
+        var x=16*Math.pow(Math.sin(t),3);
+        var y=13*Math.cos(t)-5*Math.cos(2*t)-2*Math.cos(3*t)-Math.cos(4*t);
+        t+=vt;
+        pointArr.push([x*size,-y*size]);
+    }
+    context.moveTo(pointArr[0][0],pointArr[0][1]);
+    draw()
+    function draw() {
+        context.strokeStyle='red';
+        for(var i=1;i<pointArr.length;i++){
+            x=pointArr[i][0];
+            y=pointArr[i][1];
+            context.lineTo(x,y);
+        }
+        context.stroke();
+    }
+</script>
+</body>
+</html>

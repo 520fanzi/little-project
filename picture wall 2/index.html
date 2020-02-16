@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>picture wall</title>
+  <link type="text/css" rel="stylesheet" href="templates/style.css">
+</head>
+<body>
+<!--整个包括的容器-->
+<div class="wrap"  >
+<!--所有的元素-->
+    <div class="box" >
+        <!--上下左右的图片 把class="pic"-放在照片的后面就不可以实现了-->
+        <div class="in-pic in-front">
+            <img src="images/1.jpg" style="width: 100px;height:100px;" >
+        </div>
+        <div class="in-pic in-back">
+            <img src="images/2.jpg" style="width: 100px;height:100px;" >
+        </div>
+        <div class="in-pic in-left">
+            <img src="images/3.jpg" style="width: 100px;height:100px;" >
+        </div>
+        <div class="in-pic in-right">
+            <img src="images/4.jpg" style="width: 100px;height:100px;" >
+        </div>
+        <div class="in-pic in-top">
+            <img src="images/5.jpg" style="width: 100px;height:100px;" >
+        </div>
+        <div class="in-pic in-bottom">
+            <img src="images/6.jpg" style="width: 100px;height:100px;" >
+        </div>
+        <div class="pic front" >
+            <img src="images/7.jpg" style="width: 300px;height:300px;" >
+        </div>
+        <div class="pic back">
+            <img src="images/8.jpg" style="width: 300px;height:300px;" >
+        </div>
+        <div class="pic left">
+            <img src="images/9.jpg" style="width: 300px;height:300px;" >
+        </div>
+        <div class="pic right">
+            <img src="images/1.jpg" style="width: 300px;height:300px;" >
+        </div>
+        <div class="pic top">
+            <img src="images/2.jpg" style="width: 300px;height:300px;" >
+        </div>
+        <div class=" pic bottom">
+            <img src="images/3.jpg" style="width: 300px;height:300px;" >
+        </div>
+    </div>
+
+</div>
+<script>
+<!--    没有实现点一下就可以阔开的效果-->
+// function addbig() {
+//     var odiv1=document.getElementsByClassName("front");
+//     odiv1.style="    transform: translateZ(250PX)";
+//
+//     var odiv2=document.getElementsByClassName("back");
+//     odiv2.style="       transform: translateZ(-250PX);";
+//     var odiv3=document.getElementsByClassName("left");
+//     odiv3.style="    transform: rotateY(-90deg) translateZ(250PX);";
+//     var odiv4=document.getElementsByClassName("right");
+//     odiv4.style="    transform: rotateY(90deg) translateZ(250PX);";
+//     var odiv5=document.getElementsByClassName("top");
+//     odiv5.style="    transform:rotateX(90deg) translateZ(250PX) ;";
+//     var odiv6=document.getElementsByClassName("bottom");
+//     odiv6.style="    transform:rotateX(-90deg) translateZ(250PX)";
+// }
+</script>
+</body>
+</html>

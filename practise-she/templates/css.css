@@ -1,0 +1,28 @@
+body{
+    position: relative;
+
+}
+#canvas{
+    /*???*/
+    display: block;
+    /*这里是阴影的位置*/
+    box-shadow: 1px 6px 20px black;
+    margin: auto;
+    background-color: antiquewhite;
+}
+#button1,#button2{
+    padding: 0;
+    position:absolute;
+    left: 10%;
+    background-color: #3a8ee6;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+#button1{
+    top:180px;
+}
+#button2{
+    top:280px;
+}

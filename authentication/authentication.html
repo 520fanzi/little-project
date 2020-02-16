@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>auth</title>
+    <script type="text/javascript" src="javascript/area.js"></script>
+    <script type="text/javascript" src="javascript/handler.js"></script>
+</head>
+<body style="background-color: antiquewhite">
+<fieldset>
+    <legend>l 身份校验</legend>
+    <form name="mine" method="post" action="#" enctype="multipart/form-data" style="margin: 0 auto">
+        <div>
+            <label for="shenfen" style="font-size: 15px">身份证号:</label>
+            <input name="shenfen"  type="text" id="shenfen" placeholder="请输入你的身份证号码">
+        </div>
+        <div>
+            <label for="area" style="font-size: 15px">出生地区:</label>
+            <input name="area" type="text" id="area" readonly>
+        </div>
+        <div>
+            <label for="birthday" style="font-size: 15px">生　　日:</label>
+<!--            规定输入字段是只读-->
+            <input name="birthday" type="text" id="birthday" readonly>
+        </div>
+        <div>
+            <label for="gender" style="font-size: 15px">性　　别:</label>
+<!--            disabled是禁用这个按钮的-->
+            　女　:<input name="gender" type="radio" id="women"  value="男" disabled>
+            　男　:<input name="gender" type="radio" id="gender" value="女" disabled>
+        </div>
+        <button type="submit">提交</button>
+    </form>
+</fieldset>
+</body>
+</html>
+
